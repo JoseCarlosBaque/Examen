@@ -1,1 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<datos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <fecha>2002/02/28</fecha>
+    <tempmax>sd</tempmax>
+    <tempmin>sad</tempmin>
+    <lluvia>ds3</lluvia>
+    <avisos></avisos>
+</datos>

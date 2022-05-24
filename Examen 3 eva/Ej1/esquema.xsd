@@ -3,11 +3,20 @@
     <xs:element name="datos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="fecha" type="xs:date"/>
-                <xs:element name="tempmax" type="xs:int"/>
-                <xs:element name="tempmin" type="xs:int"/>
-                <xs:element name="lluvia" type="xs:double"/>
-                <xs:element name="avisos" type="xs:string" minOccurs="0" maxOccurs="1" fixed="viento,nieve,tormentas,huracan"/>
+                <xs:element name="fecha" type="xs:date" />
+                <xs:element name="tempmax" type="xs:int" />
+                <xs:element name="tempmin" type="xs:int" />
+                <xs:element name="lluvia" type="xs:double" />
+                <xs:element name="avisos" minOccurs="0" maxOccurs="10">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="viento"/>
+                            <xs:enumeration value="nieve"/>
+                            <xs:enumeration value="tormentas"/>
+                            <xs:enumeration value="huracan"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
