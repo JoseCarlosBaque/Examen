@@ -8,6 +8,13 @@
     display: table;
 }
 
+section {
+    border-style: double;
+    border-radius: 4px;
+    border-color: black;
+}
+
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -15,25 +22,35 @@
 
 .uno {
     background-color: red;
+    color: white;
 }
 
 .dos {
     background-color: orange;
+    background-image: url("foto.jpg");
+    background-size: cover;
+    background-blend-mode: luminosity;
+    color: white;
 }
 .tres{
-    background-color: yellow;
+    background-color: rgb(194, 194, 46);
+    color: white;
 }
 
 .cuatro {
     background-color: green;
+    color: white;
 }
 
 .cinco {
-    background-color: blue;
+    background-color: blue; /*Para navegadores que no admiten degradados*/
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
 }
 
 .seis {
     background-color: indigo;
+    color: white;
 }
 
 /* For mobile phones: */
