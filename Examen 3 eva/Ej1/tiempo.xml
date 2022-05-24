@@ -1,1 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos SYSTEM "esquema.xsd">
+<datos>
+    <fecha>28/02/2002</fecha>
+    <tempmax>10</tempmax>
+    <tempmin>8</tempmin>
+    <lluvia>22</lluvia>
+    <avisos></avisos>
+</datos>

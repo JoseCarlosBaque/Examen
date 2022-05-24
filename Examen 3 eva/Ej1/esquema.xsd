@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="tempmax" type="xs:int"/>
+                <xs:element name="tempmin" type="xs:int"/>
+                <xs:element name="lluvia" type="xs:double"/>
+                <xs:element name="avisos" type="xs:string" minOccurs="0" maxOccurs="1" fixed="viento,nieve,tormentas,huracan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
