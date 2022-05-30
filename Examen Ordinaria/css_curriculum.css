@@ -13,33 +13,50 @@
 }
 
 .foto {
+    background-color: yellow;
     grid-row: span 2;
 }
 
 .alumno {
-
+    color: white;
+    background-color: blue;
 }
 
 .contacto {
+    background-color: brown;
     grid-row: span 2;
 }
 
 .perfil {
-
+    background-color: yellowgreen;
 }
 
 .idiomas {
+    background-color: blueviolet;
     grid-row: span 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .estudios {
-
+    background-color: chartreuse;
 }
 
 .intereses {
+    background-color: orange;
     grid-row: span 1;
 }
 
 .skills {
+    background-color: olivedrab;
+}
+.vacio {
+    color: transparent;
+    background-color: black;
+}
 
+.contacta {
+    background-color: orangered;
 }
