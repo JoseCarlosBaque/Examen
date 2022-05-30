@@ -19,10 +19,14 @@
 .alumno {
     color: white;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contacto {
-    background-color: brown;
+    width: 50%;
+    height: 40%;
     grid-row: span 2;
 }
 
