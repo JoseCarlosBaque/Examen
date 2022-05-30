@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nivel" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="grupo" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="alumno" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="nivel">
+        <xs:complexType>
+            <xs:attribute name="nombre" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:attribute name="nombre_grupo" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element ref="telefono" />
+                <xs:element ref="asignatura" minOccurs="1" />
+            </xs:sequence>
+          <xs:attribute name="nombre_alumno" type="xs:string" use="required" />
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="asignatura">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="n_asignatura" type="xs:string" minOccurs="1" />
+                  <xs:element name="evaluacion" type="xs:string" />
+                  <xs:element name="nota" type="xs:integer" />
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="telefono">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                
+            </xs:restriction>
+          </xs:simpleType>
+      </xs:element>
+</xs:schema>
