@@ -1,0 +1,45 @@
+* {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.foto {
+    grid-row: span 2;
+}
+
+.alumno {
+
+}
+
+.contacto {
+    grid-row: span 2;
+}
+
+.perfil {
+
+}
+
+.idiomas {
+    grid-row: span 1;
+}
+
+.estudios {
+
+}
+
+.intereses {
+    grid-row: span 1;
+}
+
+.skills {
+
+}
