@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com esquema_info.xsd">
+    <nivel nombre="Bachiller">
+        <grupo nombre_grupo="2ºA">
+            
+
+        </grupo>
+    </nivel>
+</datos>

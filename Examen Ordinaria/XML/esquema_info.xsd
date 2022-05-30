@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nivel" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="nivel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="grupo" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" minOccurs="1" maxOccurs="30"/>
+            </xs:sequence>
+            <xs:attribute name="nombre_grupo" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" maxOccurs="1"/>
+                <xs:element ref="telefono" />
+                <xs:element ref="asignatura" minOccurs="1" maxOccurs="6" />
+            </xs:sequence>
+          <xs:attribute name="nombre_alumno" type="xs:string" use="required" />
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="asignatura">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="n_asignatura" minOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Lenguaje de marcas"/>
+                            <xs:enumeration value="Entornos"/>
+                            <xs:enumeration value="Base de datos"/>
+                            <xs:enumeration value="Sistemas"/>
+                            <xs:enumeration value="Fol"/>
+                            <xs:enumeration value="Programacion"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element ref="notas" />
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="notas">
+            <xs:complexType>
+                <xs:sequence maxOccurs="9">
+                    <xs:element name="evaluacion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="primera"/>
+                            <xs:enumeration value="segunda"/>
+                            <xs:enumeration value="tercera"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="nota">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="suspenso"/>
+                                <xs:enumeration value="suficiente"/>
+                                <xs:enumeration value="notable"/>
+                                <xs:enumeration value="sobresaliente"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+      </xs:element>
+
+      <xs:element name="telefono">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]*"/>
+                <xs:minLength value="9"/>
+                <xs:maxLength value="9"/>
+            </xs:restriction>
+          </xs:simpleType>
+      </xs:element>
+</xs:schema>
