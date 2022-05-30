@@ -1,2 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<meteo xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com esquema_info.xsd.xsd">
+<datos xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com esquema_info.xsd">
+    <nivel nombre="Bachiller">
+        <grupo nombre_grupo="2ºA">
+            <alumno nombre_alumno="Marcos">
+                <nombre>Marco</nombre>
+                <telefono>654814965</telefono>
+                <asignatura>
+                    <n_asignatura>Lenguaje de marcas</n_asignatura>
+                    <notas>
+                        <evaluacion>primera</evaluacion>
+                        <nota>suficiente</nota>
+                        <evaluacion>segunda</evaluacion>
+                        <nota>notable</nota>
+                    </notas>
+                </asignatura>
+                <asignatura>
+                    <n_asignatura>Programacion</n_asignatura>
+                    <notas>
+                        <evaluacion>primera</evaluacion>
+                         <nota>notable</nota>
+                         <evaluacion>segunda</evaluacion>
+                         <nota>suficiente</nota>
+                         <evaluacion>tercera</evaluacion>
+                         <nota>suspenso</nota>
+                    </notas>
+                </asignatura>
+                <asignatura>
+                    <n_asignatura>Sistemas</n_asignatura>
+                    <notas>
+                        <evaluacion>primera</evaluacion>
+                        <nota>suficiente</nota>
+                    </notas>
+                </asignatura>
+            </alumno>
+            <alumno nombre_alumno="Carlos">
+                <nombre>Carlos</nombre>
+                <telefono>649876848</telefono>
+                <asignatura>
+                    <n_asignatura>Lenguaje de marcas</n_asignatura>
+                    <notas>
+                        <evaluacion>primera</evaluacion>
+                        <nota>suficiente</nota>
+                    </notas>
+                </asignatura>
+            </alumno>
+        </grupo>
+    </nivel>
+</datos>
